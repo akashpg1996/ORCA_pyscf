@@ -1,0 +1,16 @@
+! ExtOpt opt 
+
+%pal
+  nprocs 1
+end
+
+%geom
+  MaxIter 50000 
+end
+
+%method
+  ProgExt  "./orca_pyscf.py"
+  Ext_Params "hess=False"
+end
+
+* XYZfile 0 1 a.xyz
